@@ -1,0 +1,9 @@
+package archlinux
+package artisan
+package composer
+package docker-machine
+package fzf
+package fzf-autojump
+theme default
+theme eden
+theme spacefish

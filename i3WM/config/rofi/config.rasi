@@ -1,0 +1,7 @@
+configuration {
+	modi: "calc";
+	font: "Iosevka Medium 11";
+	combi-modi: "window,drun,ssh";
+	hide-scrollbar: true;
+	theme: "solarized-dark";
+}

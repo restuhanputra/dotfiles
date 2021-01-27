@@ -1,0 +1,41 @@
+// vim:ts=4:sw=4:et
+{
+   "border": "pixel",
+   "current_border_width": 2,
+   "floating": "auto_off",
+   "geometry": {
+      "height": 712,
+      "width": 1362,
+      "x": 2,
+      "y": 54
+   },
+   "name": "config - neofetch - Visual Studio Code",
+   "percent": 0.8,
+   "swallows": [{
+      "class": "^Code$",
+      "instance": "^code$",
+      "title": "^config\\ \\-\\ neofetch\\ \\-\\ Visual\\ Studio\\ Code$",
+      "window_role": "^browser\\-window$"
+   }],
+   "type": "con"
+}
+
+{
+   "border": "pixel",
+   "current_border_width": 2,
+   "floating": "auto_off",
+   "geometry": {
+      "height": 432,
+      "width": 720,
+      "x": 0,
+      "y": 0
+   },
+   "name": "System Command Prompt",
+   "percent": 0.2,
+   "swallows": [{
+      "class": "^URxvt$",
+      "instance": "^urxvt$",
+      "title": "^System\\ Command\\ Prompt$"
+   }],
+   "type": "con"
+}

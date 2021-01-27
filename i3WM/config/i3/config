@@ -1,0 +1,272 @@
+#---------------------------------------------------- SET VARIABLE
+set $mod Mod4
+
+#---------------------------------------------------- WORKSPACE
+## Set Workspace
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+
+## Switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+
+## Move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+
+## Cycle through active workspaces
+bindsym $mod+Ctrl+Right workspace next
+bindsym $mod+Ctrl+Left workspace prev
+
+#---------------------------------------------------- CONFIGURATION I3
+## Reload the configuration file
+bindsym $mod+Shift+c reload
+
+## Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+## Exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+#---------------------------------------------------- SET FONT'S
+font pango:FiraCode Nerd Font 9
+
+#---------------------------------------------------- i3 Keybinding
+floating_modifier $mod
+
+## start terminal
+bindsym $mod+Return exec urxvt
+
+## kill focused windows
+bindsym $mod+Shift+q kill
+
+#---------------------------------------------------- i3 MOVE
+## Change Focused Windows
+#bindsym $mod+j focus left
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
+#bindsym $mod+semicolon focus right
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+## Move Focused Windows
+#bindsym $mod+Shift+j move left
+#bindsym $mod+Shift+k move down
+#bindsym $mod+Shift+l move up
+#bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+## Resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+        # bindsym j resize shrink width 10 px or 10 ppt
+        # bindsym k resize grow height 10 px or 10 ppt
+        # bindsym l resize shrink height 10 px or 10 ppt
+        # bindsym semicolon resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+bindsym $mod+r mode "resize"
+
+#---------------------------------------------------- I3 SPLIT
+## Split in horizontal orientation
+bindsym $mod+h split h
+
+## Split in vertical orientation
+bindsym $mod+v split v
+
+#---------------------------------------------------- i3 fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+#---------------------------------------------------- i3 change container layout (stacked, tabbed, toggle split)
+#bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+#---------------------------------------------------- i3 toggle floating
+bindsym $mod+Shift+space floating toggle move position center
+
+#---------------------------------------------------- i3 Strachpad
+## Make the currently focused window a scratchpad
+bindsym $mod+Next move scratchpad
+
+## Show the first scratchpad window
+bindsym $mod+Prior scratchpad show floating toggle
+
+#---------------------------------------------------- i3 Workspace
+# Workspace Layout
+# workspace_layout tabbed
+workspace_layout default
+workspace_auto_back_and_forth yes
+default_orientation horizontal
+focus_follows_mouse no
+
+# i3 Floating window
+floating_minimum_size 75 x 50
+floating_maximum_size 1200 x 700
+
+# window configuration
+title_align center
+#default_border normal pixel none
+default_border pixel
+#smart_borders on
+
+#---------------------------------------------------- i3 Gaps
+# Set Gaps
+gaps inner 7
+gaps outer 2
+#gaps top 2
+#gaps bottom 2
+smart_gaps on
+border_radius 2
+
+# Gap size increase/decrease bind mode
+set $mode_gaps Gaps: [ UP ] increase, or [ DOWN ] decrease
+bindsym $mod+g mode "$mode_gaps"
+
+mode "$mode_gaps" {
+    bindsym Up gaps inner current plus 5
+    bindsym Down gaps inner current minus 5
+    bindsym Escape mode "default"
+    bindsym Return mode "default"
+}
+
+#---------------------------------------------------- set i3 Colorscheme
+# read color from xresource, set_from_resource $<name> <resource_name> <fallback>
+set $bg-color 	          #BCC3C3
+set $text-color           #002B36
+set $border-color	      #BCC3C3
+set $inactive-bg-color    #264A53
+set $inactive-text-color  #657B83
+set $urgent-bg-color      #CB4B16
+set $urgent-text-color	  #FFFFFF
+
+
+# window colors
+#                       border              background         text                 indicator
+client.focused          $bg-color	    $bg-color          $text-color          $bg-color
+client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color #ffaf00
+client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #ffaf00
+client.urgent           $urgent-bg-color    $urgent-bg-color   $urgent-text-color   #ffaf00
+
+#---------------------------------------------------- Autostart
+# Autolock
+exec_always --no-startup-id xautolock -time 15 -locker "/usr/bin/lock-dark" && echo mem ? /sys/power/state
+
+# Compton
+exec_always --no-startup-id  compton; compton --config ~/.config/compton/compton.conf
+
+# Polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# Network Manager Applet
+#exec --no-startup-id nm-applet
+
+# Lxpolkit
+exec --no-startup-id lxpolkit
+
+# Power Manager
+exec --no-startup-id xfce4-power-manager
+
+# Mpd
+exec --no-startup-id mpd
+
+# Udiskie
+exec --no-startup-id udiskie
+
+# Clipmenu Daemon
+exec --no-startup-id clipmenud
+
+# Picom
+exec_always killall picom; picom --dbus -b
+
+# Wallpaper
+exec_always feh --bg-scale "$HOME/.wallpaper/arch-solarized.png"
+
+
+#---------------------------------------------------- My Key Binding
+# dmenu Apps
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu='rofi -dmenu -lines 10 -width 500 -i -sort -p APPS'
+
+#Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer --increase 2
+bindsym XF86AudioLowerVolume exec --no-startup-id pamixer --decrease 2
+bindsym XF86AudioMute exec --no-startup-id pamixer --toggle-mute
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute 1 toggle
+
+# Screenshot
+bindsym Print exec --no-startup-id flameshot gui
+bindsym Shift+Print exec --no-startup-id flameshot full -p "$HOME/Pictures/screenshot"
+
+# Clipmenu
+bindsym $mod+p exec --no-startup-id clipmenu
+bindsym $mod+Shift+p exec --no-startup-id clipdel -r '.'
+
+# Restart, Suspend, Shutdown, Logout Dialog
+bindsym $mod+End exec --no-startup-id dmenu_power
+
+# Arandr
+bindsym $mod+F5 exec --no-startup-id dmenu_monitor
+bindsym $mod+Shift+F5 exec --no-startup-id arandr
+
+# Lockscreen
+bindsym $mod+F1 exec --no-startup-id /usr/bin/lock-dark
+
+# Udiskie
+bindsym $mod+F2 exec --no-startup-id dmenu_udiskie
+
+# Network Manager
+bindsym XF86WLAN exec --no-startup-id networkmanager_dmenu
+bindsym $mod+F3 exec --no-startup-id nm-connection-editor
+
+# Todo
+bindsym $mod+F10 exec --no-startup-id dmenu_todo
+
+# Keybind Bantuan
+bindsym $mod+i exec --no-startup-id dmenu_keybinds
+
+# Rofi Task Manager
+bindsym $mod+Delete exec --no-startup-id dmenu_kill
+
+# Sleep
+bindsym XF86Sleep exec --no-startup-id systemctl suspend
+
+# polybar-tray
+bindsym  $mod+F12 exec --no-startup-id polybar-tray on
+bindsym  $mod+F11 exec --no-startup-id polybar-tray off
+
+# Tab
+#bindsym $mod+Tab exec --no-startup-id j4-dmenu-desktop --dmenu="rofi -show window  -lines 10 -width 500 -display-window 'WORKSPACE'"
+
+# Coding Layout
+#exec --no-startup-id 'workspace 4; append_layout /home/$USER/.config/i3/coding.json'"
+
+#---------------------------------------------------- Windows Rules
+for_window [class   = ".*"] title_format "%title  ⋯  %class"
+#for_window [class   = "^.*"] border pixel 0
+#for_window [title   = "^.*"] border pixel 0
+for_window [class   = "rofi"] floating enable sticky enable
+for_window [class   = "mpv"] set layout tabbed
