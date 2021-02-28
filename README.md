@@ -8,6 +8,7 @@
   - [Details](#details)
   - [Screenshoot](#screenshoot)
     - [i3WM](#i3wm)
+    - [Gnome](#gnome)
 
 ## About
 
@@ -54,3 +55,14 @@ This is my *dotfile* for customization linux.
 
 * Neofetch & NCMPCPP
 <img src="Preview/i3WM/Neofetch_Ncmpcpp.png">
+
+### Gnome
+
+* Homescreen
+<img src="Preview/Gnome/HomeScreen.png">
+
+* Nautilus & Neofetch
+<img src="Preview/Gnome/Nautilus_Neofetch.png">
+
+* VS Code
+<img src="Preview/Gnome/VSCode.png">
