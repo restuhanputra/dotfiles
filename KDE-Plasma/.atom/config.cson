@@ -1,0 +1,34 @@
+"*":
+  core:
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "x-terminal"
+      "iv-terminal"
+    ]
+    projectHome: "/home/project"
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "one-dark-pro-vivid-syntax"
+    ]
+  editor:
+    defaultFontSize: 17
+    fontFamily: "Fira Code iScript, Fira Code, Dank Mono, Menlo, Consolas, DejaVu Sans Mono, monospace"
+    fontSize: 20
+    invisibles: {}
+    lineHeight: 2
+    scrollPastEnd: true
+    showIndentGuide: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+  "iv-terminal":
+    customTexts: {}
+  minimap:
+    adjustAbsoluteModeHeight: true
+    displayCodeHighlights: false
+  welcome:
+    showOnStartup: false
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
