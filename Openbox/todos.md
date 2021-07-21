@@ -13,13 +13,15 @@ Feature for rice
 - [ ] clean up keybind openbox
 - [ ] clean up keybind menu openbox
 - [ ] clean up keybind kitty
-- [ ] Add power menu (restart, lockscreen, shutdown)
 - [ ] add border dmenu rofi
 - [ ] Clean Up Keybind VS-Code
 - [ ] Sleep
 - [ ] Screenlock
 
 # DONE
+Date : 21 Juli 2021
+- [x] Add power menu (restart, lockscreen, shutdown) `power-menu at ~/.local/bin/power-menu.sh`
+
 Date : 20 Juli 2021
 - [x] Extend Monitor (1920 x 1080) - with setting `/etc/X11/xorg.conf.d/10-monitor.conf `
 - [x] Polybar Extend Monitor (1920 x 1080)
