@@ -16,9 +16,11 @@ Feature for rice
 - [ ] add border dmenu rofi
 - [ ] Clean Up Keybind VS-Code
 - [ ] Sleep
-- [ ] Screenlock
 
 # DONE
+Date : 22 Juli 2021
+- [ x] Screenlock - with `i3lock-color-git`
+
 Date : 21 Juli 2021
 - [x] Add power menu (restart, lockscreen, shutdown) `power-menu at ~/.local/bin/power-menu.sh`
 
