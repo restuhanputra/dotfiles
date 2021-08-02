@@ -11,7 +11,7 @@ Hi there! Thanks for visiting!
 <br>
 This is my personal configuration for customization gnome and some applications too.
 
-I hope you understand everything here. wink
+I hope you understand everything here. :wink:
 
 <br>
 
