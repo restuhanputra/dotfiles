@@ -1,94 +1,44 @@
-# dotfiles
+# ~/.dotfiles
 
-## Daftar Isi
+## Table of Content
 
-- [dotfiles](#dotfiles)
-  - [Daftar Isi](#daftar-isi)
   - [About](#about)
-  - [Details](#details)
+  - [Information](#information)
   - [Screenshoot](#screenshoot)
-    - [i3WM](#i3wm)
-    - [Gnome](#gnome)
-    - [KDE-Plasma](#kde-plasma)
 
 ## About
+Hi there! Thanks for visiting!
+<br>
+This is my personal configuration for customization i3wm and some applications too.
 
-This is my *dotfile* for customization linux.
+I hope you understand everything here. :wink:
 
 <br>
 
-## Details
+## Information
 
-| i3WM              |                                          |
-| :---------------- | :--------------------------------------- |
-| OS                | ArchLinux                                |
-| WM                | I3-gaps, i3-gaps-rounded                 |
-| Shell             | fish _([fish](https://github.com/fish))_ |
-| DM                | Slim                                     |
-| Font              | Fira Code, Fira Code Nerd Font           |
-| Compositor        | Compton                                  |
-| Notification      | Dunst                                    |
-| Terminal          | URxvt                                    |
-| Launcher          | rofi, dmenu, j4-dmenu-desktop            |
-| Bar               | polybar                                  |
-| Wallpaper         | feh                                      |
-| Lock Screen       | i3lock                                   |
-| Logout / Shutdown | script                                   |
-
-| Gnome           |                                                                                                                                              |
-| :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------- |
-| OS              | ArchLinux                                                                                                                                    |
-| DE              | Gnome                                                                                                                                        |
-| WM              | Mutter                                                                                                                                       |
-| Shell           | fish _([fish](https://github.com/fish))_                                                                                                     |
-| Font            | SF Pro Display                                                                                                                               |
-| Terminal        | Gnome Terminal                                                                                                                               |
-| Gnome Extension | Clipboard Indicator, Dash to Dock, Dynamic Panel Transparency, Hide Activities Button, Hide Top Bar, Lock Keys, Panel OSD, VirtualBox applet |
-
-| KDE-Plasma |                                          |
-| :--------- | :--------------------------------------- |
-| OS         | ArchLinux                                |
-| DE         | KDE-Plasma                               |
-| WM         | KWin                                     |
-| Shell      | fish _([fish](https://github.com/fish))_ |
-| Font       | SF Pro Display                           |
-| Terminal   | Konsole                                  |
-| Dock       | Latte-Dock                               |
-| Theme      | Dracula                                  |
+| #                 | Details                                                                                                                                                |
+| :---------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| OS                | [Arch Linux](https://archlinux.org/)                                                                                                                   |
+| WM                | [i3-gaps](https://archlinux.org/packages/?name=i3-gaps), [i3-gaps-rounded](https://aur.archlinux.org/packages/i3-gaps-rounded-git/)                    |
+| Shell             | [fish](https://github.com/fish)                                                                                                                        |
+| DM                | [Slim](https://archlinux.org/packages/?name=slim)                                                                                                      |
+| Font              | Fira Code, Fira Code Nerd Font                                                                                                                         |
+| Compositor        | Compton                                                                                                                                                |
+| Notification      | Dunst                                                                                                                                                  |
+| Terminal          | [URxvt](https://wiki.archlinux.org/title/rxvt-unicode)                                                                                                 |
+| Launcher          | [rofi](https://github.com/davatorium/rofi), [dmenu](https://tools.suckless.org/dmenu/), [j4-dmenu-desktop](https://github.com/enkore/j4-dmenu-desktop) |
+| Bar               | [polybar](https://github.com/polybar/polybar)                                                                                                          |
+| Wallpaper         | [feh](https://github.com/derf/feh)                                                                                                                     |
+| Lock Screen       | [i3lock](https://github.com/i3/i3lock)                                                                                                                 |
+| Logout / Shutdown | script                                                                                                                                                 |
 
 <br>
 
 ## Screenshoot
 
-### i3WM
-
 * Homescreen
-<img src="Preview/i3WM/HomeScreen.png">
+<img src="Preview/HomeScreen.png">
 
 * Neofetch & NCMPCPP
-<img src="Preview/i3WM/Neofetch_Ncmpcpp.png">
-
-### Gnome
-
-* Homescreen
-<img src="Preview/Gnome/HomeScreen.png">
-
-* Nautilus & Neofetch
-<img src="Preview/Gnome/Nautilus_Neofetch.png">
-
-* VS Code
-<img src="Preview/Gnome/VSCode.png">
-
-### KDE-Plasma
-
-* Lock Screen
-<img src="Preview/KDE-Plasma/Lock_Screen.png">
-
-* Lock Screen (login)
-<img src="Preview/KDE-Plasma/Lock_Screen_Login.png">
-
-* Homescreen
-<img src="Preview/KDE-Plasma/Homescreen.png">
-
-* Dolphin & Neofetch
-<img src="Preview/KDE-Plasma/Dolphin_Neofetch.png">
+<img src="Preview/Neofetch_Ncmpcpp.png">
