@@ -245,7 +245,7 @@
         <command>xrandr --auto</command> <!-- A more sophisticated xrandr command (to setup extended display etc) can be used here -->
       </action>
     </keybind>
-    <keybind key="XF86AudioStop">
+    <!-- <keybind key="XF86AudioStop">
       <action name="Execute">
         <command>ncmpcpp stop</command>
       </action>
@@ -264,7 +264,7 @@
       <action name="Execute">
         <command>ncmpcpp next</command>
       </action>
-    </keybind>
+    </keybind> -->
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
         <command>amixer -D pulse sset Master '5%+'</command>
