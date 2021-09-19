@@ -7,10 +7,10 @@
 <a href='#stars'><img src='https://img.shields.io/github/stars/restuhanputra/dotfiles?color=yellow&style=flat-square' alt='stars'/></a>
 
 <br />
-<p align="justify"><b>
+<p align="justify">
 This a repository with my personal configuration files. This repository serves as my way to help myself set up and maintain my workspaces. Managed using GNU stow.
 I hope you understand everything here.
-</b></p>
+</p>
 
 <br />
 
