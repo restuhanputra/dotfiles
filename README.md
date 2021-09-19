@@ -5,7 +5,6 @@
 <p align="center">
 <a href='#license'><img src='https://img.shields.io/github/license/restuhanputra/dotfiles?color=yellow&logo=github&logoColor=white&style=flat-square' alt='license'/></a>
 <a href='#stars'><img src='https://img.shields.io/github/stars/restuhanputra/dotfiles?color=yellow&style=flat-square' alt='stars'/></a>
-<a href='#size'><img src='https://img.shields.io/github/repo-size/restuhanputra/dotfiles?color=yellow&label=Dotfiles%20Size&style=flat-square' alt='size'/></a>
 
 <br />
 <p align="justify"><b>
