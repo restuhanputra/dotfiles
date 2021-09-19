@@ -203,6 +203,24 @@
     <keybind key="W-C-Right">
       <action name="GoToDesktop"><to>next</to><wrap>no</wrap></action>
     </keybind>
+    <keybind key="W-S-1">
+      <action name="SendToDesktop">
+        <to>1</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="W-S-2">
+      <action name="SendToDesktop">
+        <to>2</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="W-S-3">
+      <action name="SendToDesktop">
+        <to>3</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>
     <keybind key="W-s">
       <action name="ToggleShowDesktop"/>
     </keybind>
@@ -303,7 +321,12 @@
         <menu>root-menu</menu>
       </action>
     </keybind>
-     <keybind key="W-t">
+    <keybind key="W-Return">
+      <action name="Execute">
+        <command>kitty</command>
+      </action>
+    </keybind>
+     <!-- <keybind key="W-t">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -311,7 +334,7 @@
         </startupnotify>
         <command>kitty</command>
       </action>
-    </keybind>
+    </keybind> -->
     <keybind key="W-p">
       <action name="Execute">
         <command>/usr/bin/clipmenu</command>
