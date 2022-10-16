@@ -1,0 +1,10 @@
+[wsl2]
+memory=4GB # Limits VM memory in WSL 2 
+processors=2 # Makes the WSL 2 VM use 4 virtual processors
+localhostForwarding=true # Boolean specifying if ports bound to wildcard or localhost in the WSL 2 VM should be connectable from the host via localhost:port.
+
+hostname = hore
+generateHosts = false
+
+#After saving, I opened an administrator level powershell windows and executed:
+#Restart-Service LxssManager
