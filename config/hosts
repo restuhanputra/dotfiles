@@ -1,0 +1,180 @@
+﻿# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+# Added by Docker Desktop
+192.168.1.5 host.docker.internal
+192.168.1.5 gateway.docker.internal
+# To allow the same kube context to work on the host and the container:
+127.0.0.1 kubernetes.docker.internal
+# End of section
+
+#Dari github
+#https://gist.github.com/mul14/eb05e88fcec5bb195cbb
+
+# ---------------------------------------------------
+# Vimeo
+# ---------------------------------------------------
+
+151.101.64.217    player.vimeo.com
+151.101.129.194   vimeo-hp-videos.global.ssl.fastly.net
+151.101.66.109    f.vimeocdn.com
+151.101.64.217    vimeo.com
+151.101.130.109   i.vimeocdn.com
+151.101.64.217    developer.vimeo.com
+66.6.33.149       vimeo.tumblr.com
+
+# ---------------------------------------------------
+# Reddit
+# ---------------------------------------------------
+
+151.101.129.140   i.redditmedia.com
+52.34.230.181     www.reddithelp.com
+151.101.65.140    g.redditmedia.com
+151.101.65.140    a.thumbs.redditmedia.com
+151.101.1.140     redditgifts.com
+151.101.1.140     i.redd.it
+151.101.1.140     old.reddit.com
+151.101.1.140     new.reddit.com
+151.101.129.140   reddit.com
+151.101.129.140   gateway.reddit.com
+151.101.129.140   oauth.reddit.com
+151.101.129.140   sendbird.reddit.com
+151.101.129.140   v.redd.it
+151.101.1.140     b.thumbs.redditmedia.com
+151.101.1.140     events.reddit.com
+54.210.123.98     stats.redditmedia.com
+151.101.65.140    www.redditstatic.com
+151.101.193.140   www.reddit.com
+52.3.23.26        pixel.redditmedia.com
+151.101.65.140    www.redditmedia.com
+151.101.193.140   about.reddit.com
+151.101.1.140     out.reddit.com
+107.23.236.34     events.redditmedia.com
+151.101.61.140    e.reddit.com
+151.101.197.140   s.redditmedia.com
+146.75.25.140     gql.reddit.com
+151.101.1.140     alb.reddit.com
+34.207.103.54     sendbirdproxy-06490ff42851cbcc5.chat.redditmedia.com
+52.207.213.188    sendbirdproxy-003d8d1fb8653f6f8.chat.redditmedia.com
+34.226.121.89     sendbirdproxy-04ea6c3f71aac3e3f.chat.redditmedia.com
+
+# ---------------------------------------------------
+# Imgur
+# ---------------------------------------------------
+
+199.232.192.193   imgur.com
+151.101.40.193    p.imgur.com
+151.101.40.193    s.imgur.com
+151.101.40.193    i.imgur.com
+151.101.40.193    m.imgur.com
+151.101.40.193    i.stack.imgur.com
+52.73.122.175     apidocs.imgur.com
+151.101.40.193    api.imgur.com
+104.16.51.111     help.imgur.com
+151.101.40.193    blog.imgur.com
+151.101.40.193    store.imgur.com
+
+# ---------------------------------------------------
+# GitHub
+# ---------------------------------------------------
+
+20.205.243.166    github.com
+192.0.66.2        github.blog
+20.205.243.168    api.github.com
+185.199.108.154   docs.github.com
+20.205.243.166    gist.github.com
+20.205.243.166    shop.github.com
+185.199.109.153   githubstatus.com
+185.199.111.153   guides.github.com
+185.199.111.153   githubuniverse.com
+13.250.177.223    support.github.com
+185.199.111.153   services.github.com
+3.221.128.67      collector.githubapp.com
+185.199.109.154   github.githubassets.com
+185.199.110.133   raw.githubusercontent.com
+185.199.111.153   spotlights-feed.github.com
+185.199.110.133   avatars.githubusercontent.com
+185.199.109.154   github-releases.githubusercontent.com
+185.199.111.133   repository-images.githubusercontent.com
+
+# ---------------------------------------------------
+# DigitalOcean
+# ---------------------------------------------------
+
+104.16.182.15     digitalocean.com
+104.16.182.15     www.digitalocean.com
+104.16.181.15     push.digitalocean.com
+104.16.182.15     docs.digitalocean.com
+104.16.181.15     cloud.digitalocean.com
+104.16.181.15     store.digitalocean.com
+104.16.182.15     status.digitalocean.com
+104.16.182.15     developers.digitalocean.com
+104.16.181.15     marketplace.digitalocean.com
+199.232.44.233    assets.digitalocean.com
+162.159.130.11    investors.digitalocean.com
+
+# ---------------------------------------------------
+# NPM
+# ---------------------------------------------------
+
+104.16.93.83      npmjs.com
+104.16.27.35      npmjs.org
+104.16.93.83      www.npmjs.com
+185.199.108.153   npm.community
+185.199.109.153   blog.npmjs.org
+185.199.109.153   docs.npmjs.com
+13.236.8.150      status.npmjs.org
+104.16.25.35      registry.npmjs.org
+
+# ---------------------------------------------------
+# Steam
+# ---------------------------------------------------
+
+23.77.27.52       steamcommunity.com
+23.77.27.52       www.valvesoftware.com
+23.77.27.52       help.steampowered.com
+23.77.27.52       partner.steamgames.com
+104.119.104.79    store.steampowered.com
+
+# ---------------------------------------------------
+# PayPal
+# ---------------------------------------------------
+
+64.4.250.36                 paypal.com
+151.101.65.35               t.paypal.com
+173.0.93.224                developer.paypal.com
+192.229.232.89              www.paypalobjects.com
+138.197.13.75               publicpolicy.paypal-corp.com
+2606:4700:7::a29f:810b      about.pypl.com
+2606:4700:7::a29f:820b      investor.paypal-corp.com
+2606:4700::6811:1daa        newsroom.paypal-corp.com
+
+# ---------------------------------------------------
+# Epic Games
+# ---------------------------------------------------
+
+104.18.5.159      store.epicgames.com
+
+# ---------------------------------------------------
+# Miscellaneous
+# ---------------------------------------------------
+
+104.27.207.92     subscene.com
