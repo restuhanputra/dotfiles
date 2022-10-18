@@ -40,15 +40,16 @@ This a repository with my personal configuration files. This repository serves a
 
 | Info               | Description                      |
 | ------------------ | -------------------------------- |
-| `Operating System` | windows 10                       |
-| `Shell`            | bash, command prompt, powershell |
-| `Terminal`         | windows terminal                 |
-| `Font`             | caskaydiacove, cascadia code     |
-| `Text Editor`      | vs code                          |
-| `Package Manager`  | scoop                            |
-| `Git commit`       | git semantic commit              |
-| `Dekstop widget`   | rainmeter                        |
-| `WSL2 distro`      | ubuntu 20.04                     |
+| `Operating System` | [windows 10](https://www.microsoft.com/en-id/windows/windows-10-specifications)                       |
+| `Shell`            | [git bash](https://git-scm.com/), [powershell](https://learn.microsoft.com/en-us/powershell/) |
+| `Terminal`         | [windows terminal](https://www.microsoft.com/store/apps/9n0dx20hk701)                 |
+| `Cursor`         |    [macOS monterey white](https://www.gnome-look.org/p/1648129) |
+| `Font`             | [caskaydia cove nerd font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/CascadiaCode.zip), [cascadia code](https://github.com/microsoft/cascadia-code)    |
+| `Text Editor`      | [vs code](https://code.visualstudio.com/)                          |
+| `Package Manager`  | [scoop](https://scoop.sh/)                            |
+| `Git Commit`       | [git semantic commit](https://github.com/fteem/git-semantic-commits)              |
+| `Dekstop Widget`   | [rainmeter](https://www.rainmeter.net/)                        |
+| `WSL2 Distro`      | [ubuntu 20.04](https://ubuntu.com/wsl)                     |
 
 </details>
 <br />
@@ -64,7 +65,7 @@ Clone this repository in ~/dotfiles directory, e.g.:
 git clone --recursive https://github.com/restuhanputra/dotfiles ~/dotfiles
 ```
 
-Use mklink to manage symlinks, e.g. i wanna symlinks neofetch configuration:
+Use mklink to manage symlinks (use command prompt with administrator privileges), e.g. i wanna symlinks neofetch configuration:
 
 ```cmd
  cd ~/dotfiles
